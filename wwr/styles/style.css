@@ -80,3 +80,11 @@ footer a {
 footer a:hover {
     color: #FCEADE;
 }
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
