@@ -81,10 +81,10 @@ footer a:hover {
     color: #FCEADE;
 }
 
-.icon {
+.logo, .icon {
     width: 80px;
 }
 
 #hero-img {
-    width: 100%;
+    width: 50%;
 }
