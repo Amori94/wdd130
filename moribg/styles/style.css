@@ -44,6 +44,7 @@ body {
     background-color: #424b54;
     margin: 0px;
     padding: 0px;
+    min-width: 1200px;
 }
 
 h1, p, a{
@@ -53,11 +54,11 @@ h1, p, a{
 
 h1 {
     font-family: "Roboto:wght@900", Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: calc(50px + 3vw);
 }
 
 p {
-    font-size: 20px;
+    font-size: calc(5px + 1vw);
 }
 
 /*------------------------------banner style-------------------------------------------------------*/
@@ -71,20 +72,24 @@ p {
     grid-column: 2/2;
     grid-row: 1/3;
     z-index: -1;
+    min-width: 1000px;
 }
 
 #banner-img {
     width: 100%;
+    filter:blur(3px)
 }
 
 #banner-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
-    margin-right: 100px;
+    margin: auto;
+}
+
+.home-title {
     color:#efea5a;
-    font-size: large;
-    text-align: right;
+    font-size:calc(12px + 1.5vw);
+    text-align: center;
     text-shadow: 4px 4px #58a4b0;
 }
 
@@ -92,7 +97,7 @@ p {
 .news-box {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 3fr 50px;
-    grid-template-rows: 50px 400px 50px;
+    grid-template-rows: 50px 1fr 50px;
 }
 .news {
     grid-column: 2/5;
@@ -104,7 +109,8 @@ p {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 350px;
-    padding: 25px
+    padding: 25px;
+    margin: auto;
 }
 
 .news-box h1{
@@ -112,7 +118,7 @@ p {
     grid-column: 3/4;
     grid-row: 2/3;
     text-align: center;
-    font-size: 75px;
+    font-size: calc(50px + 2vw);
     word-wrap: normal;
     max-width: 100%;
     margin: auto;
@@ -120,7 +126,7 @@ p {
 }
 
 .news-box p{
-    column-count: 3;
+    column-count: 1;
     column-gap: 50px;
     padding: 50px;
     grid-column: 4/5;
@@ -145,15 +151,13 @@ p {
     margin-left: 50px;
     margin-right: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
     grid-template-rows: 25px 1fr 25px;
 }
 
 .tutorials p {
     padding: 50px;
-    padding-left: 0px;
     text-align: justify;
-    font-size: 20px;
     word-wrap: normal;
 }
 
@@ -166,8 +170,12 @@ p {
 .tutorial1-image {
     grid-column: 1/2;
     padding:50px;
-    height: 200px;
+    width: 85%;
+    min-width: 200px;
+    max-height: 100%;
+    object-fit: cover;
     grid-row: 2/3;
+    margin: auto;
 }
 
 .tutorial2 {
@@ -179,8 +187,12 @@ p {
 .tutorial2-image {
     grid-column: 4/5;
     padding:50px;
-    height: 200px;
+    width: 85%;
+    min-width: 200px;
+    max-height: 100%;
+    object-fit: cover;
     grid-row: 2/3;
+    margin: auto;
 }
 
 .tutorial1-text {
@@ -193,7 +205,7 @@ p {
     grid-row: 2/3;
 }
 
-/*----------------------------------------tutorial section----------------------------------------------*/
+/*----------------------------------------review section----------------------------------------------*/
 .review {
     margin: 25px 100px;
     display: grid;
@@ -203,8 +215,10 @@ p {
 
 .review-image {
     width: 100%;
+    min-width: 200px;
     grid-column: 1/2;
     grid-row:2/3;
+    margin: auto;
 }
 
 .review p {
@@ -212,7 +226,6 @@ p {
     grid-row:2/3;
     padding: 50px 50px 50px 100px;
     text-align: justify;
-    font-size: 20px;
     word-wrap: normal;
 }
 
@@ -228,7 +241,7 @@ p {
     margin: 25px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 25px 300px 25px;
+    grid-template-rows: 25px 1fr 25px;
     background-color: #f58f29;
 }
 
@@ -238,12 +251,13 @@ p {
     grid-row: 2/3;
     width:50%;
     border-radius: 50%;
+    margin: auto;
 }
 
 #aboutme-section {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 0px 50px;
+    padding: 0px 50px 50px;
 }
 
 #aboutme-section h1{
@@ -251,7 +265,6 @@ p {
 }
 
 #aboutme-section p{
-    font-size: 20px;
     text-align: justify;
 }
 
